@@ -1,0 +1,70 @@
+{
+  "topic": "Linear Regression",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What type of values does linear regression predict?",
+      "options": [
+        "Categorical",
+        "Discrete Numerical",
+        "Continuous Numerical",
+        "Ordinal"
+      ],
+      "correct_answer": "Continuous Numerical",
+      "explanation": "Linear regression is used to predict continuous numerical values, such as temperatures or prices.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "question": "What does linear regression model in a dataset?",
+      "options": [
+        "Only independent variables",
+        "Only dependent variables",
+        "The relationship between dependent and independent variables",
+        "None of the above"
+      ],
+      "correct_answer": "The relationship between dependent and independent variables",
+      "explanation": "Linear regression models the relationship between the dependent variable (target) and one or more independent variables.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "question": "What is a common use of linear regression?",
+      "options": [
+        "Classification",
+        "Clustering",
+        "Forecasting and trend analysis",
+        "Dimensionality reduction"
+      ],
+      "correct_answer": "Forecasting and trend analysis",
+      "explanation": "Linear regression is often used to forecast future values or analyze trends in data.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "What type of learning is linear regression?",
+      "options": [
+        "Unsupervised",
+        "Semi-supervised",
+        "Supervised",
+        "Reinforcement"
+      ],
+      "correct_answer": "Supervised",
+      "explanation": "Linear regression is a supervised learning algorithm, meaning it requires labeled training data to learn from.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "question": "What does linear regression fit to observed data?",
+      "options": [
+        "A curve",
+        "A polynomial",
+        "A straight line",
+        "A random distribution"
+      ],
+      "correct_answer": "A straight line",
+      "explanation": "Linear regression models the relationship between variables by fitting a straight line to observed data.",
+      "difficulty": "easy"
+    }
+  ]
+}

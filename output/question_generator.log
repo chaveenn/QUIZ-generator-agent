@@ -1,0 +1,10 @@
+2026-04-21 18:52:09,935 | INFO | question_generator | QuestionGeneratorAgent initialized with model: llama3.1:8b
+2026-04-21 18:52:09,936 | INFO | question_generator | Run started.
+2026-04-21 18:52:09,936 | INFO | question_generator | Received topic: Linear Regression
+2026-04-21 18:52:09,936 | INFO | question_generator | Using model: llama3.1:8b
+2026-04-21 18:52:09,937 | INFO | question_generator | Generating quiz for topic: Linear Regression
+2026-04-21 18:52:09,937 | INFO | question_generator | Summary length: 268 characters
+2026-04-21 18:54:31,851 | INFO | question_generator | Received raw response from model.
+2026-04-21 18:54:31,852 | INFO | question_generator | Quiz validation successful. Generated 5 questions.
+2026-04-21 18:54:31,855 | INFO | question_generator | Quiz exported successfully to: C:\Users\JanithTakshilaPlatne\Music\ctse-assignment-2\output\quiz.json
+2026-04-21 18:54:31,855 | INFO | question_generator | Run completed successfully.
