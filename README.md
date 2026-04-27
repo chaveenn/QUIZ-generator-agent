@@ -342,25 +342,12 @@ Includes:
 
 ---
 
-## 🚀 Future Improvements
-
-* Retry mechanism for invalid LLM output
-* Support multiple difficulty levels
-* Advanced prompt engineering
-* CrewAI / LangGraph integration
-* Batch quiz generation
-
----
-
 ## 📝 Notes
 
 * Runs **fully locally**
 * No external APIs required
-* Designed for **assignment compliance + scalability**
 * Ready for integration with downstream agents
 
 ---
 
-## ⭐ If you like this project
 
-Give it a ⭐ and make your lecturer impressed 😄
