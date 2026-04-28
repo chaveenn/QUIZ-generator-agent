@@ -136,13 +136,13 @@ class QuestionGeneratorAgent:
         Execute the full question generation flow.
 
         Args:
-            state: Shared workflow state containing at least 'topic' and 'summary'.
+            state: Shared workflow state containing at least 'summary' and optionally 'topic'.
             output_path: Destination path for exported quiz JSON.
 
         Returns:
             Updated state including quiz data and output file path.
         """
-        topic = state.get("topic", "")
+        topic = state.get("topic", "Generated Quiz")
         summary = state.get("summary", "")
 
         self.logger.info("Run started.")
