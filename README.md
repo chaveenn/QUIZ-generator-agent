@@ -208,16 +208,24 @@ cd ctse-assignment-2
 
 **PowerShell**
 
-```bash
+```powershell
 python -m venv venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate.ps1
 ```
 
 **CMD**
 
-```bash
+```cmd
 python -m venv venv
 venv\Scripts\activate.bat
+```
+
+**macOS / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 ---
@@ -228,11 +236,22 @@ venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
+If `requirements.txt` is not ready yet:
+
+```bash
+pip install langchain langchain-ollama pydantic pytest python-dotenv
+pip freeze > requirements.txt
+```
+
 ---
 
 ### 4️⃣ Install Ollama
 
-👉 https://ollama.com
+Install Ollama from:
+
+`https://ollama.com`
+
+Then verify:
 
 ```bash
 ollama --version
@@ -243,7 +262,7 @@ ollama --version
 ### 5️⃣ Pull Model
 
 ```bash
-ollama pull llama3
+ollama pull llama3.1:8b
 ```
 
 ---
@@ -251,8 +270,16 @@ ollama pull llama3
 ### 6️⃣ Test Model
 
 ```bash
-ollama run llama3
+ollama run llama3.1:8b
 ```
+
+Example test prompt:
+
+```text
+Generate 2 simple MCQs about linear regression in JSON.
+```
+
+Press `Ctrl + C` to exit.
 
 ---
 
@@ -260,6 +287,27 @@ ollama run llama3
 
 ```bash
 python -m app.main_question_generator
+```
+
+This will:
+
+* read `data/sample_summary.json`
+* generate a quiz
+* save output to `output/quiz.json`
+* save logs to `output/question_generator.log`
+
+---
+
+## ✅ Running Tests
+
+```bash
+pytest
+```
+
+or
+
+```bash
+pytest -v
 ```
 
 ### Expected Output

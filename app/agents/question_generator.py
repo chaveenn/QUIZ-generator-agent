@@ -53,7 +53,7 @@ class QuestionGeneratorAgent:
     from summarized lesson content using a local Ollama model.
     """
 
-    def __init__(self, model_name: str = "llama3.1:8b") -> None:
+    def __init__(self, model_name: str = "llama3") -> None:
         self.model_name = model_name
         self.logger = setup_logger()
 

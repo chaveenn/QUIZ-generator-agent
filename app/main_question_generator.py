@@ -13,7 +13,7 @@ def load_sample_input(file_path: str) -> dict:
 if __name__ == "__main__":
     state = load_sample_input("data/sample_summary.json")
 
-    agent = QuestionGeneratorAgent(model_name="llama3.1:8b")
+    agent = QuestionGeneratorAgent(model_name="llama3")
     result = agent.run(state)
 
     print("\n=== Updated State ===")
